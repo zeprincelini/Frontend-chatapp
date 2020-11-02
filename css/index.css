@@ -220,61 +220,96 @@ input[type=radio]{
 footer{
 	position: absolute;
 	bottom: 0;
-	min-height: 30px;
+	
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 /*media query*/
-@media only screen and (max-width: 375px){
-	.aside1{
-	width: 100%;
-		}
+@media only screen and (max-width: 576px){
 	.side{
-	width: 60%;
-	min-height: 50vh;
-		}
-.screen{
-	min-height: 72vh;
-	width: 100%;
-	border: 10px solid hsl(0, 0%, 100%);
-	position: relative;
-	left: 120px;
-	top: 50px;
-	border-radius: 20px;
-	box-shadow: 5px 5px 40px hsl(264, 100%, 61%);
-	background-color: hsl(270, 20%, 96%);
-	margin-right: 0;
-	box-shadow: 5px 5px 20px hsl(264, 100%, 61%);
-		}
+		width: 100%;
+	}
+	.screen{
+	min-height: 74vh;
+	width: 80%;
+	left: 130px;
+}
 	.decor{
 		display: none;
-		}
+	}
+	.aside1{
+	width: 60%;
+	float: none;
+}
 	.aside2{
+		text-align: center;
+		width: 100%;
+		float: none;
+	}
+	.aside2 p{
+		width: 100%;
+		text-align: center;
+		position: relative;
+		left: 50%;
+		right: 50%;
+		bottom: 10px;
+		
+	}
+	footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+@media only screen and (max-width:768px) and (min-width: 577px){
+	.side{
+		width: 60%;
+	}
+	.screen{
+	min-height: 74vh;
+	width: 60%;
+	left: 130px;
+}
+	.decor{
+		display: none;
+	}
+	.aside1{
+	width: 60%;
+	float: none;
+}
+	.aside2{
+		text-align: center;
+		width: 100%;
+		float: none;
+	}
+	.aside2 p{
+		width: 100%;
+		text-align: center;
+		position: relative;
+		left: 50%;
+		right: 50%;
+	}
+	footer{
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}	
+}
+@media only screen and (max-width:992px){
+	.screen{
+	min-height: 74vh;
 	width: 100%;
-		}
-.aside2-header, .aside2-text{
-	position:relative;
-	top: 100px;
-	left: 0%;
-	rigth: 0%;
-	padding: 20px;
-	text-align: center;	
+	left: 130px;
 }
-.aside2-text{
+	
+}
+@media only screen and (max-width:1200px){
+.screen{
+	min-height: 74vh;
 	width: 100%;
-}
-.aside2-header h2{
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-#two{
-	margin-left: 20px;
-}
-#four{
-	margin-left: 34px;
-}
-footer{
-	position: absolute;
-	top: 95%;
+	left: 130px;
 }
 }
